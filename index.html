@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>LPIC Level 1 Study Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --theme-color: #2c7be5;
+    }
+    .sidebar-toggle { color: var(--theme-color); }
+    .cover-main > p:last-child a {
+      background-color: var(--theme-color);
+      border-color: var(--theme-color);
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '🐧 LPIC Level 1',
+      repo: 'https://github.com/wedsiamang/LPIC_Study_Notes',
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: true,
+      auto2top: true,
+      maxLevel: 4,
+      subMaxLevel: 3,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '検索...',
+        noData: '結果なし',
+        depth: 3,
+      },
+      copyCode: {
+        buttonText: 'コピー',
+        errorText: 'エラー',
+        successText: 'コピー済'
+      },
+      pagination: {
+        previousText: '← 前のページ',
+        nextText: '次のページ →',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      count: {
+        countable: true,
+        language: 'chinese',
+        localization: {
+          words: '',
+          minute: '分で読めます',
+        },
+        isExpected: true,
+      }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+</body>
+</html>
